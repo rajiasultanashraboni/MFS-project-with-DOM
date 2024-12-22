@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payoo mfs project</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="h-screen flex justify-center items-center">
+    <!-- namvbar section is here  -->
+     <div class="flex justify-between">
+        <div><p>9:41 Pm</p></div>
+        <div class="flex gap-5">
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-battery-full"></i>
+        </div>
+
+     </div>
+    <div class="bg-slate-400 h-[600px] w-[350px] mx-auto flex justify-center items-center rounded-lg">
+
+        <div class="card bg-base-100  max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Mobile number</span>
+                </label>
+                <input id="input-mobile-number" type="text" placeholder="mobile number" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin Number</span>
+                </label>
+                <input id="pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
+
+              </div>
+              <div class="form-control mt-6">
+                <button id="login-btn" class="btn btn-primary">Add money</button>
+              </div>
+            </form>
+          </div>
+
+    </div>
+    <script src="utilities.js"></script>
+    
+</body>
+</html>
