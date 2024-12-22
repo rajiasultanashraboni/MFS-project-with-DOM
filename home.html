@@ -8,9 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="h-screen flex justify-center items-center">
+<body class=" flex justify-center items-center">
     
-    <div class="bg-slate-900 h-[600px] w-[350px] mx-auto rounded-lg pt-5 p-5">
+    <div class="bg-slate-900 h-[850px] w-[350px] mx-auto rounded-lg p-5">
         <!-- namvbar section is here  -->
      <div class="flex justify-between px-3 text-white">
         <div><p>9:41 Pm</p></div>
@@ -37,17 +37,43 @@
         <div class="btn py-2"><button>Log Out</button></div>
 
       </div>
-      <div class="divider"></div>
+      <div class="text-white my-3">
+        <hr>
+      </div>
 
       <!-- paragraph section is here  -->
+       <div class="text-white">
+            <h1 class="text-2xl font-bold">Welcome to payoo</h1>
+            <p class="text-gray-300">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+       </div>
 
-        <div class="card bg-base-100  max-w-sm shrink-0 shadow-2xl mt-5">
+       <!-- button section is here  -->
+        <div class="mt-5 grid grid-cols-3 gap-3">
+            <button class="btn">Add Money</button>
+            <button class="btn">Cash out</button>
+            <button class="btn">Transfer Money</button>
+            <button class="btn">Get bonus</button>
+            <button class="btn">Pay bill</button>
+            <button class="btn">transaction</button>
+        </div>
+
+        <!-- add money form is starts here  -->
+         <div class="mt-5">
+            <h1 class="text-lg font-bold text-white">Add money</h1>
+            <div class="card bg-gray-300  max-w-sm shrink-0 shadow-2xl mt-5">
             <form class="card-body">
               <div class="form-control">
                 <label class="label">
-                  <span class="label-text">Mobile number</span>
+                  <span class="label-text">Account Number</span>
                 </label>
-                <input id="input-mobile-number" type="text" placeholder="mobile number" class="input input-bordered" required />
+                <input id="input-mobile-number" type="text" placeholder="Account Number" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Amount to Add</span>
+                </label>
+                <input id="pin-number" type="text" placeholder="amount" class="input input-bordered" required />
+
               </div>
               <div class="form-control">
                 <label class="label">
@@ -61,6 +87,139 @@
               </div>
             </form>
           </div>
+         </div>
+        <!-- add money form is ends here  -->
+
+        <!-- cashout section is starts here  -->
+        <div class="mt-5 hidden">
+            <h1 class="text-lg font-bold text-white">withdraw money</h1>
+            <div class="card bg-gray-300  max-w-sm shrink-0 shadow-2xl mt-5">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Agent Number</span>
+                </label>
+                <input id="input-mobile-number" type="text" placeholder="Agent Number" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Amount</span>
+                </label>
+                <input id="pin-number" type="text" placeholder="amount" class="input input-bordered" required />
+
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin Number</span>
+                </label>
+                <input id="pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
+
+              </div>
+              <div class="form-control mt-6">
+                <button id="login-btn" class="btn btn-primary">Withdrawal Money</button>
+              </div>
+            </form>
+          </div>
+         </div>
+        <!-- cashout section is ends here  -->
+
+        <!-- transfer money is starts here  -->
+        <div class="mt-5 hidden">
+            <h1 class="text-lg font-bold text-white">transfer money</h1>
+            <div class="card bg-gray-300  max-w-sm shrink-0 shadow-2xl mt-5">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">User Account Number</span>
+                </label>
+                <input id="input-mobile-number" type="text" placeholder="User Account Number" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Amount</span>
+                </label>
+                <input id="pin-number" type="text" placeholder="Enter amount to transfer" class="input input-bordered" required />
+
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin Number</span>
+                </label>
+                <input id="pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
+
+              </div>
+              <div class="form-control mt-6">
+                <button id="login-btn" class="btn btn-primary">Send Now</button>
+              </div>
+            </form>
+          </div>
+         </div>
+        <!-- transfer money is ends here  -->
+
+        <!-- get bonus section is starts here  -->
+        <div class="mt-5 hidden">
+            <h1 class="text-lg font-bold text-white">Get Bonus Coupon</h1>
+            <div class="card bg-gray-300  max-w-sm shrink-0 shadow-2xl mt-5">
+            <form class="card-body">
+              
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Get bonus coupon</span>
+                </label>
+                <input id="pin-number" type="password" placeholder="enter your coupon" class="input input-bordered" required />
+
+              </div>
+              <div class="form-control mt-6">
+                <button id="bonus-btn" class="btn btn-primary">Get bonus</button>
+              </div>
+            </form>
+          </div>
+         </div>
+
+        <!-- get bonus section is ends here  -->
+
+        <!-- bill pay is starts here  -->
+        <div class="mt-5 hidden">
+            <h1 class="text-lg font-bold text-white">pay money</h1>
+            <div class="card bg-gray-300  max-w-sm shrink-0 shadow-2xl mt-5">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Account Number</span>
+                </label>
+                <input id="input-mobile-number" type="text" placeholder="Account Number" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Amount to pay</span>
+                </label>
+                <input id="pin-number" type="text" placeholder="amount" class="input input-bordered" required />
+
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin Number</span>
+                </label>
+                <input id="pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
+
+              </div>
+              <div class="form-control mt-6">
+                <button id="pay-btn" class="btn btn-primary">Pay Now</button>
+              </div>
+            </form>
+          </div>
+         </div>
+        <!-- bill pay is ends here  -->
+
+        <!-- transaction history is starts here  -->
+         <div class="flex justify-between text-white">
+            <h1 class="font-bold">Transaction history</h1>
+            <p>view All</p>
+
+         </div>
+        <!-- transaction history is ends here  -->
+
+
 
     </div>
     <script src="utilities.js"></script>
