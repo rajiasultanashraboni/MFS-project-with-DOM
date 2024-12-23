@@ -28,13 +28,13 @@
             <img src="./images/Vector.png" alt="">
             <div>
 
-                <h2>$4500</h2>
+                <h2 id="available-balance">4500</h2>
                 <p>available balance</p>
             </div>
 
         </div>
 
-        <div class="btn py-2"><button>Log Out</button></div>
+        <div class="btn py-2"><button id="logout-btn">Log Out</button></div>
 
       </div>
       <div class="text-white my-3">
@@ -58,7 +58,7 @@
         </div>
 
         <!-- add money form is starts here  -->
-         <div class="mt-5">
+         <div class="mt-5 hidden">
             <h1 class="text-lg font-bold text-white">Add money</h1>
             <div class="card bg-gray-300  max-w-sm shrink-0 shadow-2xl mt-5">
             <form class="card-body">
@@ -66,24 +66,24 @@
                 <label class="label">
                   <span class="label-text">Account Number</span>
                 </label>
-                <input id="input-mobile-number" type="text" placeholder="Account Number" class="input input-bordered" required />
+                <input id="addmoney-account-number" type="text" placeholder="Account Number" class="input input-bordered" required />
               </div>
               <div class="form-control">
                 <label class="label">
                   <span class="label-text">Amount to Add</span>
                 </label>
-                <input id="pin-number" type="text" placeholder="amount" class="input input-bordered" required />
+                <input id="addmoney-amount" type="text" placeholder="amount" class="input input-bordered" required />
 
               </div>
               <div class="form-control">
                 <label class="label">
                   <span class="label-text">Pin Number</span>
                 </label>
-                <input id="pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
+                <input id="addmoney-pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
 
               </div>
               <div class="form-control mt-6">
-                <button id="login-btn" class="btn btn-primary">Add money</button>
+                <button id="addmoney-btn" class="btn btn-primary">Add money</button>
               </div>
             </form>
           </div>
@@ -99,24 +99,24 @@
                 <label class="label">
                   <span class="label-text">Agent Number</span>
                 </label>
-                <input id="input-mobile-number" type="text" placeholder="Agent Number" class="input input-bordered" required />
+                <input id="cashout-agent-number" type="text" placeholder="Agent Number" class="input input-bordered" required />
               </div>
               <div class="form-control">
                 <label class="label">
                   <span class="label-text">Amount</span>
                 </label>
-                <input id="pin-number" type="text" placeholder="amount" class="input input-bordered" required />
+                <input id="cashout-amount" type="text" placeholder="amount" class="input input-bordered" required />
 
               </div>
               <div class="form-control">
                 <label class="label">
                   <span class="label-text">Pin Number</span>
                 </label>
-                <input id="pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
+                <input id="cashout-pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
 
               </div>
               <div class="form-control mt-6">
-                <button id="login-btn" class="btn btn-primary">Withdrawal Money</button>
+                <button id="cashout-btn" class="btn btn-primary">Withdrawal Money</button>
               </div>
             </form>
           </div>
@@ -132,24 +132,24 @@
                 <label class="label">
                   <span class="label-text">User Account Number</span>
                 </label>
-                <input id="input-mobile-number" type="text" placeholder="User Account Number" class="input input-bordered" required />
+                <input id="transfer-account-number" type="text" placeholder="User Account Number" class="input input-bordered" required />
               </div>
               <div class="form-control">
                 <label class="label">
                   <span class="label-text">Amount</span>
                 </label>
-                <input id="pin-number" type="text" placeholder="Enter amount to transfer" class="input input-bordered" required />
+                <input id="transfer-amount" type="text" placeholder="Enter amount to transfer" class="input input-bordered" required />
 
               </div>
               <div class="form-control">
                 <label class="label">
                   <span class="label-text">Pin Number</span>
                 </label>
-                <input id="pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
+                <input id="transfer-pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
 
               </div>
               <div class="form-control mt-6">
-                <button id="login-btn" class="btn btn-primary">Send Now</button>
+                <button id="transfer-btn" class="btn btn-primary">Send Now</button>
               </div>
             </form>
           </div>
@@ -157,7 +157,7 @@
         <!-- transfer money is ends here  -->
 
         <!-- get bonus section is starts here  -->
-        <div class="mt-5 hidden">
+        <div class="mt-5">
             <h1 class="text-lg font-bold text-white">Get Bonus Coupon</h1>
             <div class="card bg-gray-300  max-w-sm shrink-0 shadow-2xl mt-5">
             <form class="card-body">
@@ -166,7 +166,7 @@
                 <label class="label">
                   <span class="label-text">Get bonus coupon</span>
                 </label>
-                <input id="pin-number" type="password" placeholder="enter your coupon" class="input input-bordered" required />
+                <input id="bonus-pin-number" type="password" placeholder="enter your coupon" class="input input-bordered" required />
 
               </div>
               <div class="form-control mt-6">
@@ -187,20 +187,20 @@
                 <label class="label">
                   <span class="label-text">Account Number</span>
                 </label>
-                <input id="input-mobile-number" type="text" placeholder="Account Number" class="input input-bordered" required />
+                <input id="pay-account-number" type="text" placeholder="Account Number" class="input input-bordered" required />
               </div>
               <div class="form-control">
                 <label class="label">
                   <span class="label-text">Amount to pay</span>
                 </label>
-                <input id="pin-number" type="text" placeholder="amount" class="input input-bordered" required />
+                <input id="pay-amount" type="text" placeholder="amount" class="input input-bordered" required />
 
               </div>
               <div class="form-control">
                 <label class="label">
                   <span class="label-text">Pin Number</span>
                 </label>
-                <input id="pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
+                <input id="pay-pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
 
               </div>
               <div class="form-control mt-6">
@@ -223,6 +223,12 @@
 
     </div>
     <script src="utilities.js"></script>
+    <script src="addmoney.js"></script>
+    <script src="cashout.js"></script>
+    <script src="transfermoney.js"></script>
+    <script src="billpay.js"></script>
+    <script src="logout.js"></script>
+    <script src="getbonus.js"></script>
     
 </body>
 </html>
