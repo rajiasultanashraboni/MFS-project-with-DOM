@@ -49,16 +49,16 @@
 
        <!-- button section is here  -->
         <div class="mt-5 grid grid-cols-3 gap-3">
-            <button class="btn">Add Money</button>
-            <button class="btn">Cash out</button>
-            <button class="btn">Transfer Money</button>
-            <button class="btn">Get bonus</button>
-            <button class="btn">Pay bill</button>
-            <button class="btn">transaction</button>
+            <button class="btn" id="show-add-money-btn">Add Money</button>
+            <button class="btn" id="show-cashout-btn">Cash out</button>
+            <button class="btn" id="show-transfer-btn">Transfer Money</button>
+            <button class="btn" id="show-bonus-btn">Get bonus</button>
+            <button class="btn" id="show-pay-btn">Pay bill</button>
+            <button class="btn" id="show-transaction">transaction</button>
         </div>
 
         <!-- add money form is starts here  -->
-         <div class="mt-5 hidden">
+         <div class="mt-5 hidden" id="add-money-form">
             <h1 class="text-lg font-bold text-white">Add money</h1>
             <div class="card bg-gray-300  max-w-sm shrink-0 shadow-2xl mt-5">
             <form class="card-body">
@@ -91,7 +91,7 @@
         <!-- add money form is ends here  -->
 
         <!-- cashout section is starts here  -->
-        <div class="mt-5 hidden">
+        <div class="mt-5 hidden" id="cashout-money-form">
             <h1 class="text-lg font-bold text-white">withdraw money</h1>
             <div class="card bg-gray-300  max-w-sm shrink-0 shadow-2xl mt-5">
             <form class="card-body">
@@ -124,7 +124,7 @@
         <!-- cashout section is ends here  -->
 
         <!-- transfer money is starts here  -->
-        <div class="mt-5 hidden">
+        <div class="mt-5 hidden" id="transfer-money-form">
             <h1 class="text-lg font-bold text-white">transfer money</h1>
             <div class="card bg-gray-300  max-w-sm shrink-0 shadow-2xl mt-5">
             <form class="card-body">
@@ -157,7 +157,7 @@
         <!-- transfer money is ends here  -->
 
         <!-- get bonus section is starts here  -->
-        <div class="mt-5">
+        <div class="mt-5 hidden" id="bonus-money-form">
             <h1 class="text-lg font-bold text-white">Get Bonus Coupon</h1>
             <div class="card bg-gray-300  max-w-sm shrink-0 shadow-2xl mt-5">
             <form class="card-body">
@@ -179,7 +179,7 @@
         <!-- get bonus section is ends here  -->
 
         <!-- bill pay is starts here  -->
-        <div class="mt-5 hidden">
+        <div class="mt-5 hidden" id="pay-money-form">
             <h1 class="text-lg font-bold text-white">pay money</h1>
             <div class="card bg-gray-300  max-w-sm shrink-0 shadow-2xl mt-5">
             <form class="card-body">
@@ -212,7 +212,7 @@
         <!-- bill pay is ends here  -->
 
         <!-- transaction history is starts here  -->
-         <div class="flex justify-between text-white">
+         <div class="flex justify-between text-white mt-10" id="transaction-history-form">
             <h1 class="font-bold">Transaction history</h1>
             <p>view All</p>
 
@@ -229,6 +229,8 @@
     <script src="billpay.js"></script>
     <script src="logout.js"></script>
     <script src="getbonus.js"></script>
+    <script src="tooglebutton.js"></script>
+    <script src="toggleButtonColor.js"></script>
     
 </body>
 </html>
